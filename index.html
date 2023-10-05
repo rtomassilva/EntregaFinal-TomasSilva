@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Entrega</title>
     <link rel="shortcut icon" href="./img/Icono.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,64 +13,138 @@
     <script src="https://kit.fontawesome.com/c4caf4ee86.js" crossorigin="anonymous"></script>
 </head>
 <body class="cuerpo">
-    <!--Menu de navegacion-->
+    <!--Barra de Navegacion-->
     <header id="arriba" class="menu">
-        <nav class="menunav">
-            <p class="logo">LOGO</p>
-            <ul class="navegador">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/futbol.html">Futbol</a></li>
-                <li><a href="./pages/basketball.html">basketball</a></li>
-                <li><a href="./pages/boxeo.html">Boxeo</a></li>
-                <li><a href="./pages/contacto.html">contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand fs-3 text-light" href="#">Logo</a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body menunav">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="./pages/futbol.html">Futbol</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="./pages/basketball.html">basketball</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="./pages/boxeo.html">Boxeo</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-light" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="mainpagina">
-        <!--Aca se pone el carrusel-->
-        <div class="container">
-            <img src="./img/Lionel-Messi-20.jpeg" alt="Lionel messi interter de miami">
+    <main class="container-fluid">
+        <!--carrusel-->
+        <div id="carouselExampleCaptions" class="carousel slide w-75 mt-3 mx-auto">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!--Imagenes Del Caroussel-->
+            <section class="carousel-inner bordes">
+                <article class="carousel-item active">
+                    <img src="./img/denver.jpeg" class="d-block w-100" alt="Denver Nuggets equipo">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>¿Cuáles son las fechas clave de la temporada NBA 2023-2024?</h2>
+                      <p>La temporada 2023-2024 ya está aquí. Los Denver Nuggets defienden el título y no serán pocos los equipos que tratarán de destronar a los favoritos.</p>
+                    </div>
+                </article>
+                <article class="carousel-item">
+                    <img src="./img/fluminense.jpeg" class="d-block w-100" alt="Fluminense libertadores">
+                    <div class="carousel-caption d-none d-md-block">
+                     <h2>Gano el Flu</h2>
+                     <p>Fluminense logró un triunfo épico en casa de Inter y se metió en la final de la Copa Libertadores.</p>
+                    </div>
+                </article>
+                <article class="carousel-item">
+                    <img src="./img/advincula.jpeg" class="d-block w-100" alt="advincula vs jugador de palmeiras">
+                    <div class="carousel-caption d-none d-md-block">
+                     <h2>Boca vs Palmeiras</h2>
+                     <p>La vuelta de la semifinal se juega en San Pablo. Almirón tiene el 11, llegó Riquelme y Fluminense espera en la final.
+                    </p>
+                    </div>
+                </article>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!--Sector de Noticias-->
-        <h1 class="tituloprincipal">Ultimas Novedades</h1>
-        <section class="contenedor-noticias">
-            <article class="noticia">
-                <img src="./img/messi2.jpg" alt="Lionel Messi seleccion">
-                <h2>Seleccion Argentina</h2>
-                <p>Lionel Messi hizo un trabajo liviano: el técnico debe definir si juega de entrada o irá al banco. A su vez, probó con un cambio de esquema.</p>
+        <h1 class="col-12">Ultimas Novedades</h1>
+        <section class="row d-flex justify-content-center">
+            <!--cards Noticias-->
+            <article class="card col-12 col-md-12 col-lg-3 mx-5">
+                <img src="./img/messi2.jpg" class="card-img-top" alt="Lionel Messi">
+                <div class="card-body d-flex flex-column aling-item-center">
+                  <p class="card-text">Lionel Messi hizo un trabajo liviano: el técnico debe definir si juega de entrada o irá al banco. A su vez, probó con un cambio de esquema.</p>
+                </div>
             </article>
-            <article class="noticia">
-                <img src="./img/riquelme.jpeg" alt="Juan roman riquelme">
-                <h2>Boca Juniors</h2>
-                <p>El vicepresidente e ídolo de Boca Juan Román Riquelme, quien se había manifestado públicamente por última vez hace más de 15 días en TyC Sports, brindó una entrevista en ESPN a poco más de dos semanas para el inicio de la llave de semifinales ante Palmeiras por la Copa Libertadores, y aseguró que sueña con ver al equipo "en la final</p>
+            <article class="card col-12 col-md-12 col-lg-3 mx-5">
+                <img src="./img/lebron.jpeg" class="card-img-top" alt="Lebron James">
+                <div class="card-body d-flex flex-column aling-item-center">
+                  <p class="card-text">Finalizada la Copa del Mundo con la cuarta plaza para Estados Unidos, LeBron James ya ha puesto en marcha la reconquista del baloncesto mundial.</p>
+                </div>
             </article>
-    
-            <article class="noticia">
-                <img src="./img/lebron.jpeg" alt="Lebron james">
-                <h2>NBA</h2>
-                <p>Finalizada la Copa del Mundo con la cuarta plaza para Estados Unidos, LeBron James ya ha puesto en marcha la reconquista del baloncesto mundial</p>
+            <article class="card col-12 col-md-12 col-lg-3 mx-5">
+                <img src="./img/riquelme.jpeg" class="card-img-top" alt="Juan Roman Riquelme">
+                <div class="card-body d-flex flex-column aling-item-center">
+                  <p class="card-text">El vicepresidente e ídolo de Boca Juan Román Riquelme, quien se había manifestado públicamente por última vez hace más de 15 días en TyC Sports, brindó una entrevista en ESPN a poco más de dos semanas para el inicio de la llave de semifinales ante Palmeiras por la Copa Libertadores, y aseguró que sueña con ver al equipo "en la final.</p>
+                </div>
             </article>
         </section>
-        <section class="contenedor-noticias">
-        <article class="noticia">
-            <img src="./img/canelovscharlo.jpeg" alt="Canelo alvarez versus charlo">
-            <h2>Canelo vs Charlo</h2>
-            <p>Ha comenzado la cuenta regresiva. Con la entrada del mes de septiembre, la expectativa en torno al boxeo suele aumentar y una de las funciones más esperadas tendrá lugar en Las Vegas, Nevada, cuando Saúl Canelo Álvarez enfrente a Jermell Charlo por los cuatro cinturones de las 168 libras. A diferencia de otros años, el mexicano no tendrá la fecha estelar.</p>
-        </article>
-        <article class="noticia">
-            <img src="./img/sebastian-diaz-robles.jpeg" alt="arquero sebastian diaz robles">
-            <h2>Los penales que atajó Díaz Robles, el héroe para que Boca gane la Copa Intercontinental Sub-20</h2>
-            <p>Con el marcador 2-1 en favor del dueño de casa, llegó el turno del defensor Maxim Dekker, quien con su zurda buscó devolverle la paridad a la serie pero su fuerte remate cruzado se topó con el guardametas Xeneize de 20 años; que adivinó su intención y logró contener su disparo para desatar la locura de todos los fanáticos del Club de la Ribera presentes en Brandsen 805.</p>
-        </article>
-        <article class="noticia">
-            <img src="./img/mundialbaloncesto.jpeg" alt="Mundial basket 2023">
-            <h2>Mundial de baloncesto FIBA 2023: ¿Cuántos jugadores alemanes juegan en la NBA en qué equipos?</h2>
-            <p>Cinco de los jugadores antes mencionados también juegan en la NBA, en sus respectivos equipos: Kleber juega con los Dallas Mavericks, Schröder con los Toronto Raptors, Theis con los Indiana Pacers y los hermanos Wagner juegan con los Orlando Magic.</p>
-        </article>
+        <section class="row d-flex justify-content-center mt-3">
+            <article class="card col-12 col-md-12 col-lg-3 mx-5">
+                <img src="./img/canelovscharlo.jpeg" class="card-img-top" alt="Canelo vs Charlo">
+                <div class="card-body d-flex flex-column aling-item-center">
+                  <p class="card-text">Ha comenzado la cuenta regresiva. Con la entrada del mes de septiembre, la expectativa en torno al boxeo suele aumentar y una de las funciones más esperadas tendrá lugar en Las Vegas, Nevada, cuando Saúl Canelo Álvarez enfrente a Jermell Charlo por los cuatro cinturones de las 168 libras. A diferencia de otros años, el mexicano no tendrá la fecha estelar.</p>
+                </div>
+            </article>
+            <article class="card col-12 col-md-12 col-lg-3 mx-5">
+                <img src="./img/mundialbaloncesto.jpeg" class="card-img-top" alt="Mundial de Basket">
+                <div class="card-body d-flex flex-column aling-item-center">
+                  <p class="card-text">Cinco de los jugadores antes mencionados también juegan en la NBA, en sus respectivos equipos: Kleber juega con los Dallas Mavericks, Schröder con los Toronto Raptors, Theis con los Indiana Pacers y los hermanos Wagner juegan con los Orlando Magic.</p>
+                </div>
+            </article>
+            <article class="card col-12 col-md-12 col-lg-3 mx-5">
+                <img src="./img/sebastian-diaz-robles.jpeg" class="card-img-top" alt="Sebastian Diaz">
+                <div class="card-body d-flex flex-column aling-item-center">
+                  <p class="card-text">Los penales que atajó Díaz Robles, el héroe para que Boca gane la Copa Intercontinental Sub-20.</p>
+                </div>
+            </article>
+        </section>
+        <section class="row">
+            <div class="card justify-content-center mb-3 w-50 mt-3 mx-auto col-12">
+                <img src="./img/maravilla-martinez2.jpeg" class="card-img-top" alt="Maravilla Martinez boxeo">
+                <div class="card-body">
+                  <h2 class="card-title">Quiénes son los cinco mejores boxeadores argentinos de la historia</h2>
+                  <p class="card-text">El ChatGPT, desarrollado por OpenAI, sorprendió con la lista que brindó al realizarle esta consulta habitual entre los fanáticos del deporte. Polémica por la ausencia de Ringo Bonavena.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
         </section>
     </main>
     <!--Pie de pagina-->
-    <footer class="piedepagina">
+    <footer class="container-fluid piedepagina">
         <a class="logoabajo" href="#arriba">Logo</a>
         <div class="iconos">
             <a href="https://www.youtube.com/"><ion-icon class="iconoyoutube" name="logo-youtube"></ion-icon></a>
@@ -80,5 +155,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
