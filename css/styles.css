@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: kanit;
+    src: url("../fonts/Kanit-Medium.ttf");
+}
+.menu{
+    background-color: black;
+}
+.menunav{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menunav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.menunav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.menunav ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.menunav ul li:hover::before{
+    width: 100%;
+}
+.logo{
+    width: 130px;
+    cursor: pointer;
+    color: white;
+}
+.tituloprincipal{
+    position: absolute;
+    left: 100px;
+    padding: 2px;
+}
+.cuerpo{
+    background-color: #e0dbdb;
+}
+.conteiner{
+    width: 100%;
+    background-size: cover;
+    display: flex;
+}
+img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15,15,15,.5);
+    height: 470px;
+}
+.contenedor-noticias {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.noticia {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.noticia h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: kanit;
+}
+
+.noticia p {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+.contenedor-noticias img{
+    height: 350px;
+}
+.piedepagina{
+    background-color: black;
+    height: 50px;
+}
+.logoabajo{
+    margin-left: 50px;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    color: white;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.iconos ion-icon{
+    margin-right: 10px;
+}
+.iconoyoutube{
+    color: red;
+}
+.iconoinstagram{
+    color: pink;
+}
+.iconotwitter{
+    color: white;
+}
+.iconofacebook{
+    color: blue;
+}
+.cuerpo2{
+    background-color: rgb(167, 167, 170);
+}
+.cuerpo3{
+    background-color: rgb(115, 146, 172);
+}
+.cuerpo4{
+    background-color: antiquewhite;
+}
+.formulario{
+    background-color: rgb(26, 29, 29);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+}
+.formulario h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+.control{
+    width: 100%;
+    background-color: rgb(146, 146, 158);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    font-size: 18px;
+}
+.formulario p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.formulario a{
+    color: white;
+    text-decoration: none;
+}
+.formulario a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.formulario .botons{
+    width: 100%;
+    background-color: blue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.piedepaginacontacto{
+    background-color: black;
+    height: 50px;
+    margin-top: 322px;
+}
+.cuerpo-5{
+   background-color: rgb(72, 53, 92);
+}
