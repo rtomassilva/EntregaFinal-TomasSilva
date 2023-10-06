@@ -12,6 +12,12 @@
         background-color: rgba(255, 255, 255, 0.15);
     }
 }
+@media (max-width: 767px) {
+    .tamaño {
+      font-size: 14px;
+      padding: 10px;
+    }
+}
 .menu{
     background-color: black;
     height: 70px;
@@ -35,53 +41,8 @@
 .menunav ul li:hover::before{
     width: 100%;
 }
-.logo{
-    width: 130px;
-    cursor: pointer;
-    color: white;
-}
-.tituloprincipal{
-    position: absolute;
-    left: 100px;
-    padding: 2px;
-}
 .cuerpo{
     background-color: #e0dbdb;
-}
-.conteiner{
-    width: 100%;
-    background-size: cover;
-    display: flex;
-}
-.contenedor-noticias {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    cursor: pointer;
-}
-
-.noticia {
-    flex: 1;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.noticia h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-family: kanit;
-}
-
-.noticia p {
-    font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Lora', serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-}
-.contenedor-noticias img{
-    height: 350px;
 }
 .piedepagina{
     background-color: black;

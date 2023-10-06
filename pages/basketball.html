@@ -13,6 +13,7 @@
 </head>
 <body class="cuerpo3">
     <header id="arriba" class="menu">
+        <!--Menu de Navegacion-->
         <nav class="navbar navbar-expand-lg bg-transparent">
             <div class="container">
                 <a class="navbar-brand fs-3 text-light" href="../index.html">Logo</a>
@@ -47,47 +48,53 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <img src="../img/nba.jpeg" alt="messi">
+    <!--Comienza el Sector de Noticias-->
+    <main class="container-fluid">
+        <div class="row w-75 mx-auto mt-3">
+            <img src="../img/nba.jpeg" alt="Jugadores NBA" class="img-fluid rounded">
         </div>
-        <h1 class="tituloprincipal">Noticias</h1>
-        <section class="contenedor-noticias">
-            <article class="noticia">
-                <img src="../img/leonard.jpeg" alt="jugadores nba">
-                <h2>¿El fin del load managment? La NBA quiere restringir el descanso de las estrellas</h2>
-                <p>Se avecinan cambios en la NBA. Más de los que ya hay, teniendo en cuenta que los que arrastra el nuevo convenio colectivo se terminarán de establecer en la temporada 2023-24. El debate se centra ahora en los jugadores, especialmente en su descanso. </p>
+        <h1 class="col-12">Noticias</h1>
+        <section class="row row-cols-1 row-cols-md-2 g-4">
+            <article class="col">
+              <div class="card">
+                <img src="../img/lillard.jpeg" class="card-img-top" alt="Damian Lillard">
+                <div class="card-body">
+                  <h2 class="card-title">Damian Lillard se va de Portland</h2>
+                  <p class="card-text">A menos de un mes para el comienzo de la nueva temporada NBA, Damian Lillard rompe el mercado. El ex guardia de Portland Trailblazers se mudará a Milwaukee Bucks para jugar con el griego Antetokounmpo y afrontar un nuevo desafío.</p>
+                </div>
+              </div>
             </article>
-            <article class="noticia">
-                <img src="../img/basket-argentina.jpeg" alt="Basket Argentina">
-                <h2>Con nuevo logo, así se abrirá La Liga Nacional en su temporada 40</h2>
-                <p>La máxima categoría del básquet argentino dio a conocer el calendario de los primeros y mostró su nueva imagen institucional para celebrar su cuarta década.</p>
+            <article class="col">
+                <div class="card">
+                    <img src="../img/deck.jpeg" class="card-img-top" alt="Deck Jugador NBA">
+                    <div class="card-body">
+                        <h2 class="card-title">Gabriel Deck sufrió una nueva lesión en Real Madrid</h2>
+                        <p class="card-text">El Merengue confirmó que el alero argentino padece un traumatismo en el musculo femoral de la pierna derecha y estará tres semanas afuera.</p>
+                    </div>
+                </div>
             </article>
-            <article class="noticia">
-                <img src="../img/seleccion.argentina.jpeg" alt="seleccion argentina basket">
-                <h2>por qué la Selección se quedó afuera del Mundial y de los Juegos Olímpicos por primera vez en 40 años</h2>
-                <p>FPero, claro, enfrente estaba nuestra mítica Generación Dorada, con todo su talento, ambición, oficio, compromiso, corazón y personalidad. Así produjo uno de los impactos deportivos más grandes de la historia del deporte, aquel triunfo en la semifinal olímpica que shockeó al mundo.</p>
+            <article class="col">
+                <div class="card">
+                    <img src="../img/seleccion.argentina.jpeg" class="card-img-top" alt="Seleccion Argentina">
+                    <div class="card-body">
+                        <h2 class="card-title">la Selección se quedó afuera del Mundial y de los Juegos Olímpicos por primera vez en 40 años</h2>
+                        <p class="card-text">Pero, claro, enfrente estaba nuestra mítica Generación Dorada, con todo su talento, ambición, oficio, compromiso, corazón y personalidad. Así produjo uno de los impactos deportivos más grandes de la historia del deporte, aquel triunfo en la semifinal olímpica que shockeó al mundo.</p>
+                    </div>
+                </div>
             </article>
-        </section>
-        <section class="contenedor-noticias">
-        <article class="noticia">
-            <img src="../img/euro-liga.jpeg" alt="campeones euro liga">
-            <h2>¿Qué jugadores argentinos fueron campeones de la Euroliga? La lista a la que se sumó Gabriel Deck</h2>
-            <p>Después de la NBA, una liga exclusiva para el mejor talento del mundo, la Euroliga aparece de forma indiscutida como la segunda mejor competición de básquetbol en el mundo. La competencia europea reúne talento, prestigio, pasión y presión y muchos basquetbolistas argentinos han participado en ella, pero pocos han disfrutado de poder ganarla.</p>
-        </article>
-        <article class="noticia">
-            <img src="../img/usa-basket.jpeg" alt="equipo usa basket">
-            <h2>El Team USA hace autocrítica: "La NBA tiene mucho que aprender del juego FIBA"</h2>
-            <p>Alemania, campeona, Serbia, plata, Canadá bronce y Estados Unidos una vez más sin medalla.</p>
-        </article>
-        <article class="noticia">
-            <img src="../img/mundialbaloncesto.jpeg" alt="Mundial Basket">
-            <h2>Mundial de baloncesto FIBA 2023: ¿Cuántos jugadores alemanes juegan en la NBA en qué equipos?</h2>
-            <p>Cinco de los jugadores antes mencionados también juegan en la NBA, en sus respectivos equipos: Kleber juega con los Dallas Mavericks, Schröder con los Toronto Raptors, Theis con los Indiana Pacers y los hermanos Wagner juegan con los Orlando Magic.</p>
-        </article>
+            <article class="col">
+                <div class="card">
+                    <img src="../img/euro-liga.jpeg" class="card-img-top" alt="Euro liga basket">
+                    <div class="card-body">
+                        <h2 class="card-title">¿Qué jugadores argentinos fueron campeones de la Euroliga?</h2>
+                        <p class="card-text">Después de la NBA, una liga exclusiva para el mejor talento del mundo, la Euroliga aparece de forma indiscutida como la segunda mejor competición de básquetbol en el mundo. La competencia europea reúne talento, prestigio, pasión y presión y muchos basquetbolistas argentinos han participado en ella, pero pocos han disfrutado de poder ganarla.</p>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
-    <footer class="piedepagina">
+    <!--Pie de Pagina-->
+    <footer class="container-fluid piedepagina">
         <a class="logoabajo" href="#arriba">Logo</a>
         <div class="iconos">
             <a href="https://www.youtube.com/"><ion-icon class="iconoyoutube" name="logo-youtube"></ion-icon></a>
