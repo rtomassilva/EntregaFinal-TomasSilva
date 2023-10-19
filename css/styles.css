@@ -1,143 +1,159 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-@font-face{
-    font-family: kanit;
-    src: url("../fonts/Kanit-Medium.ttf");
+
+/* estilo de la pagina de contacto */
+.formulario {
+  background-color: black;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  color: white;
 }
-@media(max-width: 991px){
-    .sidebar{
-        background-color: rgba(255, 255, 255, 0.15);
-    }
+.formulario h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: white;
+}
+.formulario input {
+  background-color: rgb(146, 146, 158);
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid;
+  font-size: 18px;
+}
+.formulario p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.formulario a {
+  color: white;
+  text-decoration: none;
+}
+.formulario a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.formulario .botons {
+  background-color: blue;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.piedepaginacontacto {
+  height: 50px;
+  margin-top: 322px;
+}
+
+.cuerpo-5 {
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+@font-face {
+  font-family: kanit;
+  src: url("../fonts/Kanit-Medium.ttf");
+}
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
 }
 @media (max-width: 767px) {
-    .tamaño {
-      font-size: 14px;
-      padding: 10px;
-    }
-}
-.menu{
-    background-color: black;
-    height: 70px;
-}
-.menunav ul li{
-    position: relative;
-}
-.menunav ul li a{
-    font-size: 1.2rem;
-}
-.menunav ul li::before{
-    content: "";
-    height: 3px;
-    width: 0%;
-    background: yellowgreen;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    transition: 0.4s ease-out;
-}
-.menunav ul li:hover::before{
-    width: 100%;
-}
-.cuerpo{
-    background-color: #e0dbdb;
-}
-.piedepagina{
-    background-color: black;
-    height: 60px;
-}
-.logoabajo{
-    margin-left: 50px;
-    position: relative;
-    top: 15px;
-    text-decoration: none;
-    color: white;
-}
-.iconos{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-}
-.iconos ion-icon{
-    margin-right: 10px;
-}
-.iconoyoutube{
-    color: red;
-}
-.iconoinstagram{
-    color: pink;
-}
-.iconotwitter{
-    color: white;
-}
-.iconofacebook{
-    color: blue;
-}
-.cuerpo2{
-    background-color: rgb(167, 167, 170);
-}
-.cuerpo3{
-    background-color: rgb(115, 146, 172);
-}
-.cuerpo4{
-    background-color: antiquewhite;
-}
-.formulario{
-    background-color: rgb(26, 29, 29);
-    width: 400px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    color: white;
-}
-.formulario h1{
-    font-size: 22px;
-    margin-bottom: 20px;
-    color: white;
-}
-.control{
-    width: 100%;
-    background-color: rgb(146, 146, 158);
+  .tamaño {
+    font-size: 14px;
     padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid;
-    font-size: 18px;
+  }
 }
-.formulario p{
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
+/* estilo del menu de navegacion */
+.menu {
+  background-color: black;
+  height: 70px;
 }
-.formulario a{
-    color: white;
-    text-decoration: none;
+.menu ul li {
+  position: relative;
 }
-.formulario a:hover{
-    color: white;
-    text-decoration: underline;
+.menu ul li::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: yellowgreen;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.4s ease-out;
 }
-.formulario .botons{
-    width: 100%;
-    background-color: blue;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
+.menu ul li:hover::before {
+  width: 100%;
 }
-.piedepaginacontacto{
-    background-color: black;
-    height: 50px;
-    margin-top: 322px;
+.menu ul li a {
+  font-size: 1.2rem;
 }
-.cuerpo-5{
-   background-color: rgb(72, 53, 92);
+
+/*color de fondo de las paginas */
+.cuerpo {
+  background-color: #e0dbdb;
 }
-.bordes{
-    border-radius: 10px
+
+.cuerpo2 {
+  background-color: rgb(167, 167, 170);
 }
+
+.cuerpo3 {
+  background-color: rgb(115, 146, 173);
+}
+
+.cuerpo4 {
+  background-color: antiquewhite;
+}
+
+.bordes {
+  border-radius: 10px;
+}
+
+/*estilo pie de pagina */
+.piedepagina {
+  background-color: black;
+  height: 60px;
+}
+.piedepagina .logoabajo {
+  margin-left: 50px;
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  color: white;
+}
+.piedepagina .iconos {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.piedepagina .iconos .iconoyoutube {
+  color: red;
+}
+.piedepagina .iconos .iconoinstagram {
+  color: pink;
+}
+.piedepagina .iconos .iconotwitter {
+  color: white;
+}
+.piedepagina .iconos .iconofacebook {
+  color: blue;
+}
+.piedepagina .iconos ion-icon {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
