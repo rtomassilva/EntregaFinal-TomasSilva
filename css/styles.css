@@ -156,4 +156,12 @@
   margin-right: 10px;
 }
 
+.sombreado {
+  background-color: rgba(5, 7, 12, 0.4);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=styles.css.map */
